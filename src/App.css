@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244,244,244);
+  color: #333;
+}
+
+.App {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+  align-items: center;
+  color: #282c34;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #808080;
+}
+
+.intro {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.intro span {
+  display: block;
+}
+
+.input, .button {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  line-height: 2rem;
+  border-radius: 10px;
+}
+
+.input {
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.button {
+  color: white;
+  background-color: rgba(0,0,255,0.75);
+  border: 1px solid rgba(0,0,255,0.75);
+  transition: background-color 250ms;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(0,0,255,0.85);
+}
+
+.card-list {
+  margin-top: 2rem;
+}
+
+.card {
+  width: 80%;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin: 0 auto 2rem;
+  background-color: white;
+}
+
+.card--title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.card--image {
+  margin: 0 auto 10px;
+  display: block
+}
+
+@media (min-width:786px) {
+  .card {
+    width: 70%;
+  }
+}
